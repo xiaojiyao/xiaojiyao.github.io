@@ -1,0 +1,204 @@
+.jd_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #eee;
+  height: 1000px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  background: rgba(31, 39, 136, 0);
+  max-width: 640px;
+  z-index: 999;
+}
+header .jd_logo {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-image: url(../images/jd-sprites.png);
+  background-size: 200px 200px;
+  background-position: 3px -303px;
+  top: 5px;
+  left: 5px;
+}
+header form {
+  height: 30px;
+  padding: 0px 70px 0px 80px;
+  position: relative;
+  margin-top: 5px;
+  max-width: 640px;
+}
+header form::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -58px -108px;
+  left: 90px;
+  top: 3px;
+}
+header .jd_search {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding-left: 35px;
+  color: #666;
+  font-size: 14px;
+}
+header .js_login {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 14px;
+}
+.jd_banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.jd_banner ul:nth-of-type(1) {
+  position: relative;
+}
+.jd_banner ul:nth-of-type(1) > li {
+  float: left;
+}
+.jd_banner ul:nth-of-type(1) > li > img {
+  width: 100%;
+}
+.jd_banner ul:nth-of-type(2) {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, 0);
+}
+.jd_banner ul:nth-of-type(2) li {
+  width: 6px;
+  height: 6px;
+  float: left;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-left: 15px;
+}
+.jd_banner ul:nth-of-type(2) li.active {
+  background-color: #fff;
+}
+.jd_banner ul:nth-of-type(2) li:first-of-type {
+  margin-left: 0px;
+}
+.jd_menu {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.jd_menu ul {
+  width: 100%;
+}
+.jd_menu ul li {
+  width: 25%;
+  text-align: center;
+  float: left;
+  padding: 10px 0;
+}
+.jd_menu ul li img {
+  width: 60px;
+  display: inline-block;
+}
+.jd_menu ul li span {
+  display: block;
+  color: #666;
+}
+.jd_products {
+  width: 100%;
+}
+.jd_products .jd_productBox {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.jd_products .jd_productBox .p_title {
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #ccc;
+}
+.jd_products .jd_productBox .p_title p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  padding-left: 25px;
+  position: relative;
+}
+.jd_products .jd_productBox .p_title p::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 12px;
+  width: 3px;
+  height: 12px;
+  background-color: #e92322;
+}
+.jd_products .jd_productBox.jd_secondKill .p_title .title_left {
+  position: relative;
+}
+.jd_products .jd_productBox.jd_secondKill .p_title .title_left span:first-of-type {
+  width: 20px;
+  height: 22px;
+  background: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -83px -110px;
+  position: absolute;
+  left: 10px;
+  top: 6px;
+}
+.jd_products .jd_productBox.jd_secondKill .p_title .title_left span:nth-of-type(2) {
+  color: #666;
+  font-size: 14px;
+  margin-left: 38px;
+}
+.jd_products .jd_productBox.jd_secondKill .p_title .title_left ul {
+  margin-top: 8px;
+  margin-left: 5px;
+  float: right;
+}
+.jd_products .jd_productBox.jd_secondKill .p_title .title_left ul > li {
+  width: 15px;
+  height: 20px;
+  display: block;
+  float: left;
+  background-color: #222;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 5px;
+}
+.jd_products .jd_productBox.jd_secondKill .p_title .title_left ul li:nth-of-type(3n) {
+  width: 6px;
+  background-color: transparent;
+  color: #222;
+}
+.jd_products .jd_productBox.jd_secondKill .p_content {
+  padding: 10px 0;
+  text-align: center;
+}
+.jd_products .jd_productBox.jd_secondKill .p_content ul {
+  width: 100%;
+}
+.jd_products .jd_productBox.jd_secondKill .p_content ul > li {
+  width: 33.33%;
+  float: left;
+}
+.jd_products .jd_productBox.jd_secondKill .p_content ul > li > a {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.jd_products .jd_productBox.jd_secondKill .p_content ul > li > a > img {
+  width: 60%;
+  display: inline-block;
+}
